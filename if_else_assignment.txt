@@ -1,0 +1,54 @@
+[ Q.1 ]
+
+length=float(input("Enter length of a rectangle: "))
+breadth=float(input("Enter breadth of a rectangle: "))
+area=length*breadth
+perimeter=2*(length+breadth)
+if area>perimeter:
+    print("The area of the rectangle is greater than its perimeter")
+else:
+    print("The perimeter of the rectangle is greater than its area")
+
+
+[ Q.2 ]
+
+a1 = int(input("Age of first person : "))
+a2 = int(input("Age of second person : "))
+a3 = int(input("Age of third person : "))
+
+l1 = [a1,a2,a3]
+print("The oldest person : ",max(l1))
+
+
+[ Q.3 ]
+
+age = int(input("Age of person : "))
+
+if age < 18:
+    print("Minors who are not eglible to work")
+elif age <= 60:
+    print("Eglible to work")
+else:
+    print("Too old to work as per gove. regulations")
+
+[ Q.4 ]
+
+ch = input("Enter any Characters : ")
+
+vList = ['A','E','I','O','U','a','e','i','o','u']
+
+if ch in vList:
+    print("is Vowel")
+else:
+    print("Consonant")
+
+[ Q.5 ]
+
+salary = int(input("Enter Salary : "))
+year = int(input("Enter Year : "))
+
+if year > 5:
+    print("Your Total Salary with Bounse : ",salary + (salary*0.05))
+else:
+    print("Your service is not greater than 5 year")
+
