@@ -1,0 +1,58 @@
+[ Q.1 ]
+
+def reverse_string(str):  
+    str1 = "" 
+    for i in str:  
+        str1 = i + str1  
+    return str1
+     
+str = "Pentagon Space"       
+print("The original string is: ",str)  
+print("The reverse string is",reverse_string(str))
+
+
+[ Q.2 ]
+
+str = "Pentagon Space"
+
+ffive = ""
+ostr = ""
+for i in range(len(str)):
+    if i <= 5:
+        ffive += str[i]
+    else:
+        ostr += str[i]
+        
+reversed=''.join(reversed(ffive))
+print(reversed+ostr)
+
+
+[ Q.3 ]
+
+def removeDuplicate(str):
+    s=set(str)
+    s="".join(s)
+    print("Without Order:",s)
+    t=""
+    for i in str:
+        if(i in t):
+            pass
+        else:
+            t=t+i
+    
+    return t
+      
+str="Pentagon Space"
+print(removeDuplicate(str))
+
+[ Q.4 ]
+
+def reverse_string(str):  
+    str1 = "" 
+    for i in str:  
+        str1 = i + str1  
+    return str1
+     
+str = "Pentagon Space"       
+print("The original string is: ",str)  
+print("The reverse string is",reverse_string(str))
